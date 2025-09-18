@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 export default function Footer() {
@@ -42,7 +43,7 @@ export default function Footer() {
                 <div className="lg:mx-auto text-left">
                     <h4 className="text-lg text-white font-medium mb-7">Company</h4>
                     <ul className="text-sm transition-all duration-500">
-                        <li className="mb-6"><a href="/"  className="text-white/70 hover:text-white transition-colors">Home</a></li>
+                        <li className="mb-6"><Link href="/"  className="text-white/70 hover:text-white transition-colors">Home</Link></li>
                         <li className="mb-6"><a href="/about"  className="text-white/70 hover:text-white transition-colors">About Us</a></li>
                         <li className="mb-6"><a href="/portfolio"  className="text-white/70 hover:text-white transition-colors">Portfolio</a></li>
                         <li><a href="/contact"  className="text-white/70 hover:text-white transition-colors">Contact</a></li>

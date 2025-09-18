@@ -17,7 +17,7 @@ export default function Testimonial() {
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [isAutoPlaying])
+  }, [isAutoPlaying, testimonials.length])
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => 
@@ -137,7 +137,7 @@ export default function Testimonial() {
                       ))}
                         </div>
                     <p className="text-lg text-white/80 leading-8 mb-9 group-hover:text-white text-center">
-                      "{testimonial.text}"
+                      &ldquo;{testimonial.text}&rdquo;
                     </p>
                     <div className="flex flex-col items-center justify-center">
                       <h5 className="text-white font-medium transition-all duration-500 group-hover:text-white text-center text-lg">

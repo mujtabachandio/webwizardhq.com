@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { 
@@ -201,9 +202,11 @@ export default function PortfolioPage() {
                     <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl overflow-hidden hover:bg-white/15 transition-all duration-300 h-full">
                       {/* Project Image */}
                       <div className="relative overflow-hidden">
-                        <img
+                        <Image
                           src={project.image}
                           alt={project.title}
+                          width={600}
+                          height={400}
                           className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
@@ -313,7 +316,7 @@ export default function PortfolioPage() {
                 Ready to Start Your Project?
               </h2>
               <p className="text-white/70 mb-8 max-w-2xl mx-auto text-lg">
-                Let's discuss your project requirements and create something amazing together.
+                Let&apos;s discuss your project requirements and create something amazing together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.button

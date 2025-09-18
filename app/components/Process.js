@@ -60,7 +60,7 @@ export default function Process() {
             Our <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Process</span>
           </h2>
           <p className="mt-6 text-lg leading-8 text-white/70 max-w-3xl mx-auto">
-            We follow a proven methodology to deliver exceptional results. Here's how we bring your ideas to life.
+            We follow a proven methodology to deliver exceptional results. Here&apos;s how we bring your ideas to life.
           </p>
         </motion.div>
 
@@ -141,7 +141,7 @@ export default function Process() {
               Ready to Start Your Project?
             </h3>
             <p className="text-white/70 mb-6 max-w-2xl mx-auto">
-              Let's discuss your project and see how our proven process can help you achieve your goals.
+              Let&apos;s discuss your project and see how our proven process can help you achieve your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button

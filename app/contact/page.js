@@ -97,7 +97,7 @@ export default function ContactPage() {
               Get In <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Touch</span>
             </h1>
             <p className="mt-6 text-xl leading-8 text-white/70 max-w-3xl mx-auto">
-              Ready to start your next project? We'd love to hear from you. Let's discuss how we can help bring your ideas to life.
+              Ready to start your next project? We&apos;d love to hear from you. Let&apos;s discuss how we can help bring your ideas to life.
             </p>
           </motion.div>
         </div>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                   >
                     <CheckCircleIcon className="w-16 h-16 text-green-400 mx-auto mb-4" />
                     <h3 className="text-xl font-semibold text-white mb-2">Message Sent!</h3>
-                    <p className="text-white/70">Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    <p className="text-white/70">Thank you for contacting us. We&apos;ll get back to you within 24 hours.</p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -267,7 +267,7 @@ export default function ContactPage() {
               <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 h-full">
                 <h2 className="text-2xl font-bold text-white mb-6">Contact Information</h2>
                 <p className="text-white/70 leading-relaxed mb-8">
-                  We're here to help you bring your digital vision to life. Reach out to us through any of the channels below, and we'll get back to you as soon as possible.
+                  We&apos;re here to help you bring your digital vision to life. Reach out to us through any of the channels below, and we&apos;ll get back to you as soon as possible.
                 </p>
 
                 <div className="space-y-6">
@@ -321,7 +321,7 @@ export default function ContactPage() {
               Frequently Asked <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Questions</span>
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Here are some common questions we receive. Don't see your question? Feel free to contact us directly.
+              Here are some common questions we receive. Don&apos;t see your question? Feel free to contact us directly.
             </p>
           </motion.div>
 

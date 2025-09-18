@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { 
@@ -82,7 +83,7 @@ export default function AboutPage() {
               About <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">WebWizard</span>
             </h1>
             <p className="mt-6 text-xl leading-8 text-white/70 max-w-3xl mx-auto">
-              We're a passionate team of developers and designers dedicated to creating exceptional digital experiences that drive business growth.
+              We&apos;re a passionate team of developers and designers dedicated to creating exceptional digital experiences that drive business growth.
             </p>
           </motion.div>
         </div>
@@ -130,10 +131,10 @@ export default function AboutPage() {
                   WebWizard was born from a simple belief: every business deserves a digital presence that truly represents their vision and drives real results. Founded in 2019, we started as a small team of passionate developers who were frustrated with the cookie-cutter solutions dominating the market.
                 </p>
                 <p>
-                  Today, we've grown into a full-service digital agency, but we've never lost sight of our core mission: to create websites and applications that don't just look good, but work brilliantly for our clients' specific needs.
+                  Today, we&apos;ve grown into a full-service digital agency, but we&apos;ve never lost sight of our core mission: to create websites and applications that don&apos;t just look good, but work brilliantly for our clients&apos; specific needs.
                 </p>
                 <p>
-                  We believe in the power of technology to transform businesses, and we're here to make that transformation as smooth and successful as possible for every client we work with.
+                  We believe in the power of technology to transform businesses, and we&apos;re here to make that transformation as smooth and successful as possible for every client we work with.
                 </p>
               </div>
             </motion.div>
@@ -148,9 +149,11 @@ export default function AboutPage() {
               <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8">
                 <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 rounded-2xl blur-xl"></div>
                 <div className="relative">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
                     alt="Our team working"
+                    width={600}
+                    height={400}
                     className="w-full h-64 object-cover rounded-xl"
                   />
                 </div>
@@ -215,7 +218,7 @@ export default function AboutPage() {
               Meet Our <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Team</span>
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              The talented individuals behind WebWizard's success.
+              The talented individuals behind WebWizard&apos;s success.
             </p>
           </motion.div>
 
@@ -230,9 +233,11 @@ export default function AboutPage() {
                 className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group text-center"
               >
                 <div className="relative mb-4">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
+                    width={300}
+                    height={300}
                     className="w-24 h-24 rounded-full object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -266,7 +271,7 @@ export default function AboutPage() {
                 Ready to Work With Us?
               </h2>
               <p className="text-white/70 mb-8 max-w-2xl mx-auto text-lg">
-                Let's discuss your project and see how our team can help bring your vision to life.
+                Let&apos;s discuss your project and see how our team can help bring your vision to life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.button

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, CodeBracketIcon, CpuChipIcon, RocketLaunchIcon } from '@heroicons/react/20/solid'
 
 const features = [
@@ -79,7 +80,7 @@ export default function About() {
             className="relative"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 rounded-2xl blur-xl"></div>
-            <img
+            <Image
               alt="WebWizard Development Process"
               src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
               width={2432}

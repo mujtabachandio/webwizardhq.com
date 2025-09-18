@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from 'next/image';
 
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
@@ -170,11 +171,15 @@ const PortfolioCard = ({
       >
         <div className="relative group">
           <div className="overflow-hidden rounded-2xl">
-            <motion.img 
-              src={ImageHref} 
-              alt="portfolio" 
-              className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
-            />
+            <motion.div className="w-full h-64 overflow-hidden">
+              <Image 
+                src={ImageHref} 
+                alt="portfolio" 
+                width={400}
+                height={256}
+                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
+              />
+            </motion.div>
           </div>
           <motion.div 
             className="relative z-10 mx-4 -mt-20 rounded-2xl bg-white/10 backdrop-blur-xl py-6 px-4 text-center border border-white/20 shadow-2xl"
