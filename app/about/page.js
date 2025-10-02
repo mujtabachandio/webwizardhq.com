@@ -16,10 +16,10 @@ import {
 
 export default function AboutPage() {
   const stats = [
-    { label: "Projects Completed", value: "150+", icon: CheckCircleIcon },
-    { label: "Happy Clients", value: "120+", icon: UserGroupIcon },
-    { label: "Years Experience", value: "5+", icon: ClockIcon },
-    { label: "Awards Won", value: "12", icon: TrophyIcon }
+    { label: "Projects Completed", value: "105+", icon: CheckCircleIcon },
+    { label: "Happy Clients", value: "100+" , icon: UserGroupIcon },
+    { label: "Years Experience", value: "4+", icon: ClockIcon },
+    { label: "Success Rate", value: "98%", icon: TrophyIcon }
   ]
 
   const values = [
@@ -197,58 +197,6 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-white/70 leading-relaxed">
                   {value.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Meet Our <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Team</span>
-            </h2>
-            <p className="text-white/70 max-w-2xl mx-auto">
-              The talented individuals behind WebWizard&apos;s success.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 group text-center"
-              >
-                <div className="relative mb-4">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={300}
-                    height={300}
-                    className="w-24 h-24 rounded-full object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-white transition-colors duration-300">
-                  {member.name}
-                </h3>
-                <p className="text-white/80 mb-3 font-medium">
-                  {member.role}
-                </p>
-                <p className="text-white/70 text-sm leading-relaxed">
-                  {member.description}
                 </p>
               </motion.div>
             ))}

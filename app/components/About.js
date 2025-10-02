@@ -6,19 +6,19 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, CodeBracketIcon, CpuChipI
 
 const features = [
   {
-    name: 'Modern Development',
+    name: 'Customized Solutions',
     description:
-      'We use cutting-edge technologies like React, Next.js, and modern frameworks to build fast, scalable web applications that stand out.',
+      'We work closely with you, understand your goals, and deliver tailored solutions to help your brand shine.',
     icon: CodeBracketIcon,
   },
   {
-    name: 'Performance Optimized',
-    description: 'Every project is optimized for speed, SEO, and user experience with industry best practices and modern optimization techniques.',
+    name: 'Sector-Agnostic',
+    description: 'Our services are not sector-specific like those of other agencies. We serve businesses across all industries.',
     icon: RocketLaunchIcon,
   },
   {
-    name: 'Scalable Solutions',
-    description: 'Our applications are built to grow with your business, using cloud infrastructure and scalable architecture patterns.',
+    name: 'Cost-Effective',
+    description: 'Our mission is to maximize your financial resources while delivering concrete results and measurable ROI.',
     icon: CpuChipIcon,
   },
 ]
@@ -42,14 +42,14 @@ export default function About() {
             viewport={{ once: true }}
           >
             <div className="lg:max-w-lg">
-              <h2 className="text-base/7 font-semibold text-white/80">About WebWizard</h2>
-              <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent sm:text-5xl">
-                Crafting Digital Excellence
-              </p>
+              <h2 className="text-base/7 font-semibold text-white/80">About WebWizard Creative Agency</h2>
+              <h3 className="mt-2 text-4xl font-semibold tracking-tight text-pretty bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent sm:text-5xl">
+                Why We Are the Leading Creative & Digital Agency
+              </h3>
               <p className="mt-6 text-lg/8 text-white/70">
-                We are passionate developers who transform ideas into stunning digital experiences. 
-                Our team combines creativity with technical expertise to deliver exceptional web solutions 
-                that drive business growth and user engagement.
+                WebWizard is a premier creative agency specializing in illustration & graphic design, 2D & 3D animation, website design, logo design, and social media marketing. 
+                Our expert team delivers comprehensive creative and digital solutions that drive business growth for companies of all sizes. 
+                We work closely with you to understand your vision and deliver tailored creative solutions that help your brand stand out in the competitive market.
               </p>
               <dl className="mt-10 max-w-xl space-y-6 text-base/7 lg:max-w-none">
                 {features.map((feature, index) => (
@@ -62,11 +62,11 @@ export default function About() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.02, y: -2 }}
                   >
-                    <dt className="inline font-semibold text-white">
+                    <dt className="font-semibold text-white">
                       <feature.icon aria-hidden="true" className="absolute top-4 left-4 size-5 text-white/80" />
                       {feature.name}
-                    </dt>{' '}
-                    <dd className="inline text-white/70 mt-2 block">{feature.description}</dd>
+                    </dt>
+                    <dd className="text-white/70 mt-2">{feature.description}</dd>
                   </motion.div>
                 ))}
               </dl>
@@ -81,8 +81,8 @@ export default function About() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-white/5 rounded-2xl blur-xl"></div>
             <Image
-              alt="WebWizard Development Process"
-              src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+              alt="WebWizard digital marketing agency team working on website design and digital marketing projects"
+              src="/website/5.avif"
               width={2432}
               height={1442}
               className="relative w-3xl max-w-none rounded-2xl shadow-2xl ring-1 ring-white/20 bg-white/5 backdrop-blur-sm sm:w-228 md:-ml-4 lg:-ml-0"

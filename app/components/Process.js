@@ -13,34 +13,34 @@ export default function Process() {
   const processes = [
     {
       id: 1,
-      title: "Discovery & Planning",
-      description: "We start by understanding your vision, goals, and requirements through detailed consultation and research.",
+      title: "Brand Research",
+      description: "We start the process with a thorough comprehension of your brand's values, mission, and target audience.",
       icon: LightBulbIcon,
-      features: ["Project Analysis", "Requirement Gathering", "Timeline Planning", "Budget Estimation"],
+      features: ["Brand Analysis", "Target Audience Research", "Market Analysis", "Competitor Research"],
       duration: "1-2 weeks"
     },
     {
       id: 2,
-      title: "Design & Prototyping",
-      description: "Our design team creates stunning mockups and prototypes that bring your vision to life.",
+      title: "Audience Targeting",
+      description: "We identify key trends, consumer behaviors, and emerging opportunities that can propel your brand forward.",
       icon: PencilIcon,
-      features: ["UI/UX Design", "Wireframing", "Prototyping", "Design Approval"],
-      duration: "2-3 weeks"
+      features: ["Trend Analysis", "Behavioral Insights", "Opportunity Identification", "Strategy Development"],
+      duration: "1-2 weeks"
     },
     {
       id: 3,
-      title: "Development & Testing",
-      description: "We build your project using cutting-edge technologies with rigorous testing at every step.",
+      title: "Conversion Optimization",
+      description: "Our final product is designed to deliver results by focusing on one crucial aspect: higher conversion rates.",
       icon: CodeBracketIcon,
-      features: ["Frontend Development", "Backend Development", "Quality Assurance", "Performance Optimization"],
-      duration: "4-8 weeks"
+      features: ["Conversion Analysis", "A/B Testing", "Performance Optimization", "Results Tracking"],
+      duration: "2-4 weeks"
     },
     {
       id: 4,
       title: "Launch & Support",
       description: "We deploy your project and provide ongoing support to ensure everything runs smoothly.",
       icon: RocketLaunchIcon,
-      features: ["Deployment", "Go-Live Support", "Training", "Maintenance"],
+      features: ["Campaign Launch", "Performance Monitoring", "Ongoing Optimization", "Regular Reporting"],
       duration: "Ongoing"
     }
   ]
@@ -57,10 +57,10 @@ export default function Process() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Our <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Process</span>
+            Our Efficient <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Workflow</span>
           </h2>
           <p className="mt-6 text-lg leading-8 text-white/70 max-w-3xl mx-auto">
-            We follow a proven methodology to deliver exceptional results. Here&apos;s how we bring your ideas to life.
+            We follow a proven methodology to deliver exceptional results. Here&apos;s how we turn your ideas into digital success stories.
           </p>
         </motion.div>
 

@@ -16,7 +16,6 @@ export default function ContactPage() {
     company: '',
     phone: '',
     projectType: '',
-    budget: '',
     message: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -48,7 +47,6 @@ export default function ContactPage() {
         company: '',
         phone: '',
         projectType: '',
-        budget: '',
         message: ''
       })
     }, 3000)
@@ -57,7 +55,7 @@ export default function ContactPage() {
   const contactInfo = [
     {
       title: "Phone & Email",
-      details: ["+1 (555) 123-4567", "hello@webwizard.com"],
+      details: ["(850) 801-5002", "support@webwizardhq.com"],
       description: "Call us or send us an email anytime"
     }
   ]
@@ -72,13 +70,6 @@ export default function ContactPage() {
     "Other"
   ]
 
-  const budgetRanges = [
-    "Under $10,000",
-    "$10,000 - $25,000",
-    "$25,000 - $50,000",
-    "$50,000 - $100,000",
-    "Over $100,000"
-  ]
 
   return (
     <div className="min-h-screen bg-black">
@@ -184,48 +175,28 @@ export default function ContactPage() {
                           value={formData.phone}
                           onChange={handleInputChange}
                           className="w-full h-12 px-4 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 transition-all duration-300"
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="(850) 801-5002"
                         />
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-sm font-medium text-white/80 mb-2">
-                          Project Type
-                        </label>
-                        <select
-                          name="projectType"
-                          value={formData.projectType}
-                          onChange={handleInputChange}
-                          className="w-full h-12 px-4 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm text-white focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 transition-all duration-300"
-                        >
-                          <option value="" className="bg-gray-800">Select project type</option>
-                          {projectTypes.map((type) => (
-                            <option key={type} value={type} className="bg-gray-800">
-                              {type}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-white/80 mb-2">
-                          Budget Range
-                        </label>
-                        <select
-                          name="budget"
-                          value={formData.budget}
-                          onChange={handleInputChange}
-                          className="w-full h-12 px-4 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm text-white focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 transition-all duration-300"
-                        >
-                          <option value="" className="bg-gray-800">Select budget range</option>
-                          {budgetRanges.map((range) => (
-                            <option key={range} value={range} className="bg-gray-800">
-                              {range}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
+                    <div>
+                      <label className="block text-sm font-medium text-white/80 mb-2">
+                        Project Type
+                      </label>
+                      <select
+                        name="projectType"
+                        value={formData.projectType}
+                        onChange={handleInputChange}
+                        className="w-full h-12 px-4 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm text-white focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 transition-all duration-300"
+                      >
+                        <option value="" className="bg-gray-800">Select project type</option>
+                        {projectTypes.map((type) => (
+                          <option key={type} value={type} className="bg-gray-800">
+                            {type}
+                          </option>
+                        ))}
+                      </select>
                     </div>
 
                     <div>

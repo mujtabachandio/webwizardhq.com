@@ -25,11 +25,10 @@ const Portfolio = () => {
               Our Portfolio
             </span>
             <h2 className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
-              Our Recent Projects
+              Our Recent Creative & Digital Projects
             </h2>
             <p className="text-white/70 text-base max-w-2xl mx-auto">
-              Discover our latest web development projects, showcasing modern design, 
-              cutting-edge technology, and exceptional user experiences.
+              Explore our recent creative and digital projects showcasing our expertise in illustration & graphic design, 2D & 3D animation, website design, logo design, and social media marketing.
             </p>
           </motion.div>
 
@@ -43,10 +42,11 @@ const Portfolio = () => {
             <ul className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
                 {[
                   { key: "all", label: "All Projects" },
-                  { key: "web", label: "Web Apps" },
-                  { key: "mobile", label: "Mobile Apps" },
-                  { key: "ecommerce", label: "E-commerce" },
-                  { key: "saas", label: "SaaS Platforms" }
+                  { key: "web", label: "Website Design" },
+                  { key: "animation", label: "2D & 3D Animation" },
+                  { key: "graphic", label: "Illustration & Graphic Design" },
+                  { key: "logo", label: "Logo Design" },
+                  { key: "marketing", label: "Social Media & Digital Marketing" }
                 ].map((item, index) => (
                   <motion.li 
                     key={item.key}
@@ -80,55 +80,73 @@ const Portfolio = () => {
             viewport={{ once: true }}
           >
             <PortfolioCard
-              ImageHref="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
-              category="Web App"
-              title="E-commerce Platform"
-              description="Modern React-based online store with advanced features"
+              ImageHref="/website/2.webp"
+              category="Website Design"
+              title="Modern E-commerce Website"
+              description="Responsive e-commerce platform with modern UI/UX design"
               button="View Project"
               buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-              category="Mobile App"
-              title="Fitness Tracker"
-              description="Cross-platform mobile app with real-time analytics"
+              ImageHref="/website/3.avif"
+              category="Website Design"
+              title="Corporate Business Website"
+              description="Professional corporate website with advanced features"
               button="View Project"
               buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              category="SaaS Platform"
-              title="Project Management Tool"
-              description="Collaborative workspace with team management features"
+              ImageHref="/digital-marketing/2.webp"
+              category="Social Media & Digital Marketing"
+              title="Social Media Campaign"
+              description="Digital marketing strategy with video content"
+              button="Watch Video"
+              buttonHref="#"
+              showCard={showCard}
+            />
+            <PortfolioCard
+              ImageHref="/digital-marketing/3.avif"
+              category="Social Media & Digital Marketing"
+              title="Brand Marketing Strategy"
+              description="Multi-channel marketing campaign with video production"
+              button="Watch Video"
+              buttonHref="#"
+              showCard={showCard}
+            />
+            <PortfolioCard
+              ImageHref="/Illustrations/2.jpg"
+              category="Illustration & Graphic Design"
+              title="Creative Illustration Series"
+              description="Custom illustrations for brand storytelling"
               button="View Project"
               buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              category="E-commerce"
-              title="Digital Marketplace"
-              description="Multi-vendor platform with payment integration"
+              ImageHref="/Illustrations/3.jpg"
+              category="Illustration & Graphic Design"
+              title="Graphic Design Collection"
+              description="Modern graphic design elements and layouts"
               button="View Project"
               buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              category="Web App"
-              title="Analytics Dashboard"
-              description="Real-time data visualization and reporting tool"
+              ImageHref="/Logos/design2.jpg"
+              category="Logo Design"
+              title="Brand Identity Design"
+              description="Complete logo and brand identity system"
               button="View Project"
               buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-              category="SaaS Platform"
-              title="CRM System"
-              description="Customer relationship management with automation"
+              ImageHref="/Logos/design3.jpg"
+              category="Logo Design"
+              title="Creative Logo Collection"
+              description="Modern and innovative logo designs"
               button="View Project"
               buttonHref="#"
               showCard={showCard}
@@ -156,10 +174,11 @@ const PortfolioCard = ({
       <motion.div
         className={`${
           showCard === "all" || 
-          (showCard === "web" && category === "Web App") ||
-          (showCard === "mobile" && category === "Mobile App") ||
-          (showCard === "ecommerce" && category === "E-commerce") ||
-          (showCard === "saas" && category === "SaaS Platform")
+          (showCard === "web" && category === "Website Design") ||
+          (showCard === "animation" && category === "2D & 3D Animation") ||
+          (showCard === "graphic" && category === "Illustration & Graphic Design") ||
+          (showCard === "logo" && category === "Logo Design") ||
+          (showCard === "marketing" && category === "Social Media & Digital Marketing")
             ? "block"
             : "hidden"
         }`}
@@ -174,7 +193,7 @@ const PortfolioCard = ({
             <motion.div className="w-full h-64 overflow-hidden">
               <Image 
                 src={ImageHref} 
-                alt="portfolio" 
+                alt={`${title} - ${category} project by WebWizard digital marketing agency`}
                 width={400}
                 height={256}
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" 
@@ -188,7 +207,7 @@ const PortfolioCard = ({
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <span className="text-white/80 mb-3 block text-sm font-medium bg-white/10 px-3 py-1 rounded-full inline-block">
+            <span className="text-white/80 mb-3 text-sm font-medium bg-white/10 px-3 py-1 rounded-full">
               {category}
             </span>
             <h3 className="text-white mb-3 text-xl font-bold">{title}</h3>

@@ -16,9 +16,9 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-black h-screen flex items-center justify-center">
+    <div className="bg-black min-h-screen flex items-center justify-center relative overflow-hidden">
 
-      <div className="relative isolate px-6 w-full lg:px-8">
+      <div className="relative isolate px-6 w-full max-w-7xl mx-auto lg:px-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-40"
@@ -31,22 +31,22 @@ export default function Hero() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-gradient-to-tr from-white/40 to-white/10 opacity-60 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-         <div className="mx-auto max-w-2xl py-8 sm:py-12 lg:py-16">
+         <div className="mx-auto max-w-4xl py-16 sm:py-20 lg:py-24 text-center">
            <motion.div 
-             className="hidden sm:mb-8 sm:flex sm:justify-center"
+             className="mb-8 flex justify-center"
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.6, delay: 0.2 }}
            >
              <motion.div 
-               className="relative rounded-full px-3 py-1 text-sm/6 text-white/80 ring-1 ring-white/20 hover:ring-white/40"
+               className="relative rounded-full px-4 py-2 text-sm text-white/80 ring-1 ring-white/20 hover:ring-white/40 bg-white/5 backdrop-blur-sm"
                whileHover={{ scale: 1.05 }}
                transition={{ type: "spring", stiffness: 400, damping: 10 }}
              >
-               Announcing our next round of funding.{' '}
-               <a href="#" className="font-semibold text-white">
+               🚀 New: Get 20% off your first project!{' '}
+               <a href="#contact" className="font-semibold text-white hover:text-gray-300 transition-colors">
                  <span aria-hidden="true" className="absolute inset-0" />
-                 Read more <span aria-hidden="true">&rarr;</span>
+                 Contact us <span aria-hidden="true">&rarr;</span>
                </a>
              </motion.div>
            </motion.div>
@@ -57,7 +57,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <motion.h1 
-              className="text-5xl font-semibold tracking-tight text-balance sm:text-7xl" 
+              className="text-3xl font-bold tracking-tight text-balance sm:text-5xl md:text-6xl lg:text-7xl leading-tight px-4" 
               style={{
                 background: 'linear-gradient(90deg, #ffffff 0%, #e5e7eb 50%, #9ca3af 100%)',
                 WebkitBackgroundClip: 'text',
@@ -68,39 +68,38 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Data to enrich your online business
+              Creative Digital Solutions for Your Business Success
             </motion.h1>
             <motion.p 
-              className="mt-8 text-lg font-medium text-pretty text-white/80 sm:text-xl/8"
+              className="mt-6 text-lg font-medium text-pretty text-white/80 sm:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
+              Your All-In-One Destination for Creative & Digital Success. We specialize in illustration & graphic design, 2D & 3D animation, website design, logo design, and social media marketing to help your business thrive.
             </motion.p>
             <motion.div 
-              className="mt-10 flex items-center justify-center gap-x-6"
+              className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
             >
               <motion.a
                 href="#"
-                className="rounded-md bg-gradient-to-r from-white to-gray-200 text-black px-3.5 py-2.5 text-sm font-semibold shadow-xs hover:from-gray-100 hover:to-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="w-full sm:w-auto rounded-full bg-gradient-to-r from-white to-gray-200 text-black px-8 py-4 text-base font-semibold shadow-lg hover:from-gray-100 hover:to-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                Get started
+                Get a Free Quote
               </motion.a>
               <motion.a 
                 href="#" 
-                className="text-sm/6 font-semibold text-white hover:text-gray-300 transition-colors"
+                className="w-full sm:w-auto text-base font-semibold text-white hover:text-gray-300 transition-colors border border-white/20 rounded-full px-8 py-4 hover:bg-white/10"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                Learn more <span aria-hidden="true">→</span>
+                Start A Project <span aria-hidden="true" className="ml-2">→</span>
               </motion.a>
             </motion.div>
           </motion.div>
